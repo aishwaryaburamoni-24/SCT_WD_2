@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    <div id="display" class="display">00:00:00</div>
+    <div class="buttons">
+      <button id="start" class="btn">Start</button>
+      <button id="pause" class="btn">Pause</button>
+      <button id="reset" class="btn">Reset</button>
+      <button id="lap" class="btn">Lap</button>
+    </div>
+    <button id="toggle-theme" class="btn toggle-btn">🌗 Toggle Dark Mode</button>
+    <div id="lap-list" class="lap-list"></div>
+    <p class="tip">⌨️ Keyboard Shortcuts: S = Start, P = Pause, R = Reset, L = Lap</p>
+  </div>
+
+  <audio id="beep-sound" src="beep.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
